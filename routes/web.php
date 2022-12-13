@@ -26,7 +26,7 @@ Route::get('ping', function () {
     ]);
 
     $response = $mailchimp->lists->getAllLists();
-    dd($response);
+    // dd($response);s
 });
 
 Route::get('/', [PostController::class, 'index'])->name('home');
